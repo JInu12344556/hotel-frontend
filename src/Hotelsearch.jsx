@@ -29,7 +29,7 @@ const generateRandomHotel = (id, location) => {
 
 const HotelList = () => {
   // Sample hotel data
-  const [hotels, setHotels] = useState(() => {
+  const [hotels] = useState(() => {
     const locations = ['Egmore', 'Santhome', 'Nungambakkam'];
     const generatedHotels = [];
     for (let location of locations) {
