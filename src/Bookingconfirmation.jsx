@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import { useLocation, useNavigate } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
 
 const BookingConfirmation = () => {
   const [username, setUsername] = useState('');
@@ -9,7 +9,7 @@ const BookingConfirmation = () => {
   const [error, setError] = useState('');
 
   const location = useLocation();
-  const navigate = useNavigate();
+
 
   useEffect(() => {
     const fetchData = async () => {
